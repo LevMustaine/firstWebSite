@@ -1,0 +1,665 @@
+/* ================================
+    Default theme
+    -----------------------------
+    Fonts : raleway & Open Sans
+    .............................
+    Colors:
+        moon Yellow: #f4c613
+        Black russian: #212226
+        White Smoke: #f4f4f4
+        White: #fff
+        black: #000000
+===================================*/
+
+
+/* ================================
+                Html & Body
+===================================*/
+
+html,
+body {
+    height: 100%;
+}
+body {
+    color: #212226;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Raleway", sans-serif;
+}
+p {
+    font-family: "Open Sans", sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 24px;
+}
+section {
+    background: #fff;
+    overflow: hidden;
+}
+
+/* ================================
+                Preloader
+===================================*/
+
+#preloader {
+    background-color: #fff;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+}
+#status {
+    background-image: url("../img/preloader/preloader.gif");
+    background-repeat: no-repeat;
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-top: -35px;
+    margin-left: -35px;
+}
+
+/* ================================
+                Home
+===================================*/
+
+#home {
+    background: none;
+    height: 100%;
+}
+#home-bg-video {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1;
+    background: url("../video/Coding.jpg") no-repeat;
+    background-size: cover;
+}
+#home-overlay {
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+#home-content {
+    width: 100%;
+    height: 100%;
+    display: table;
+}
+#home-content-inner {
+    display: table-cell;
+    vertical-align: middle;
+}
+#home-heading h1 {
+    color: #fff;
+    font-size: 65px;
+    font-weight: 100;
+    text-transform: uppercase;
+    margin: 0;
+    display: inline-block;
+}
+#home-heading h1 span {
+    color: #f4c613;
+    font-weight: 500;
+}
+#home-text p {
+    color: #fff;
+    font-size: 17px;
+    font-weight: 100;
+    margin: 8px 0 30px 0;
+}
+
+/* ================================
+                buttons
+===================================*/
+
+.btn-general {
+    font-family: "Raleway", sans-serif;
+    border-radius: 28px;
+    font-size: 13px;
+    text-transform: uppercase;
+    margin: 0 6px;
+    padding: 12px 46px 12px 46px;
+    -webkit-transition: all .5s;
+    transition: all .5s;
+}
+.btn-home {
+    color: #fff;
+    border: 1px solid #fff;
+}
+.btn-home:hover,
+.btn-home:focus {
+    color: #fff;
+    background-color: #f4c613;
+    border: 1px solid #f4c613;
+}
+.btn-yellow {
+    color: #f4c513;
+    border: 1px solid gray;
+}
+.btn-yellow:hover,
+.btn-yellow:focus {
+    color: #fff;
+    background-color: #f4c613;
+    border: 1px solid #fff;
+}
+.btn-back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 3px 15px;
+    border-radius: 4px;
+    font-size: 22px;
+}
+
+/* ================================
+                Arrow Down
+===================================*/
+
+#arrow-down {
+    position: absolute;
+    left: 49%;
+    bottom: 20px;
+    color: #fff;
+    font-size: 32px;
+    width: 32px;
+    height: 32px;
+    text-align: center;
+    z-index: 1;
+}
+#arrow-down:hover,
+#arrow-down:focus {
+    color: #f4c613;
+}
+
+/* ================================
+                ANIMATION
+===================================*/
+
+.typewriter {
+    display: inline-block;
+}
+.typewriter h1 {
+    color: orange;
+    font-family: "Chango", sans-serif;
+    overflow: hidden;
+    /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid orange;
+    /* The typwriter cursor */
+    white-space: nowrap;
+    /* Keeps the content on a single line */
+    margin: 0 auto;
+    /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em;
+    /* Adjust as needed */
+    animation: typing 2s steps(30, end), blink-caret .5s step-end infinite;
+}
+
+/* The typing effect */
+
+@keyframes typing {
+    from {
+        width: 0
+    }
+    to {
+        width: 100%
+    }
+}
+
+/* The typewriter cursor effect */
+
+@keyframes blink-caret {
+    from,
+    to {
+        border-color: transparent
+    }
+    50% {
+        border-color: orange
+    }
+}
+
+/* ================================
+               Content Boxes
+===================================*/
+
+.content-box-lg {
+    padding: 120px 0;
+}
+.content-box-md {
+    padding: 100px 0;
+}
+.content-footer-md {
+    padding: 70px 0;
+}
+
+/* ================================
+               Vertical heading
+===================================*/
+
+.vertical-heading h5 {
+    color: #f4c613;
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: uppercase;
+    word-spacing: 9px;
+    display: inline-block;
+    -webkit-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+    position: relative;
+    top: 60px;
+    left: -50px;
+}
+.vertical-heading h2 {
+    margin: 0 0 0 35px;
+    font-size: 42px;
+    font-weight: 100;
+    line-height: 45px;
+}
+
+/* ================================
+               About 01
+===================================*/
+
+#about-right p:first-child {
+    margin-bottom: 30px;
+}
+#about-bottom {
+    margin-top: 60px;
+}
+#about-bottom img {
+    margin: 0 auto;
+}
+
+/* ================================
+               About 02
+===================================*/
+
+#about-02 {
+    background-color: #f4f4f4;
+}
+.about-item {
+    background-color: #fff;
+    padding: 80px 30px;
+    -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.about-item i {
+    font-size: 42px;
+    margin: 0;
+}
+.about-item img {
+    width: 42px;
+    height: 42px;
+}
+.about-item h3 {
+    font-size: 23px;
+    margin-bottom: 10px;
+}
+.about-item hr {
+    width: 45px;
+    height: 3px;
+    background-color: #f4c613;
+    margin: 0 auto;
+    border: none;
+}
+.about-item p {
+    margin-top: 20px;
+}
+
+/*
+Hover state
+*/
+
+.about-item:hover {
+    background-color: #f4c613;
+}
+.about-item:hover i,
+.about-item:hover h3,
+.about-item:hover p {
+    color: #fff;
+}
+.about-item:hover img {
+    color: #fff;
+}
+.about-item:hover hr {
+    background-color: #fff;
+}
+.about-item:hover i,
+.about-item:hover img {
+    transform: translateY(-20px)
+}
+
+/* Smooth transition*/
+
+.about-item,
+.about-item i,
+.about-item hr {
+    -webkit-transition: all 400ms ease-in-out;
+    transition: all 400ms ease-in-out;
+}
+
+/* ================================
+    skill - Owlcarousel - slider
+===================================*/
+
+#skill-left .vertical-heading {
+    min-height: 160px;
+}
+.skill-pic {
+    margin: 8px;
+    position: relative;
+}
+.skill-pics-overlay {
+    background-color: rgba(33, 34, 38, .9);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    opacity: 0;
+    -webkit-transition: all 300ms linear;
+    transition: all 300ms linear;
+}
+.skill-member-info {
+    width: 100%;
+    height: 100%;
+    padding: 80px 0;
+}
+.skill-member-info h6 {
+    color: #f4c613;
+    font-size: 16px;
+    margin: 0;
+}
+.skill-member-info p {
+    color: #fff;
+}
+.skill-pic:hover .skill-pics-overlay {
+    opacity: 1;
+}
+
+/* ================================
+    Social Icons
+===================================*/
+
+ul.social-list {
+    padding: 0;
+    margin: 2px;
+}
+ul.social-list li {
+    display: inline-block;
+    padding: 0;
+}
+ul.social-list li a {
+    border: 1px solid #fff;
+    width: 35px;
+    height: 35px;
+    display: inline-block;
+    line-height: 35px;
+    color: #fff;
+    border-radius: 50%;
+}
+ul.soclial-list li:nth-child(1) a:hover {
+    background: #3b5998;
+}
+.fa {
+    color: #212226;
+    background: none;
+    font-size: 30px;
+    margin: 8px;
+}
+.owl-prev {
+    position: absolute;
+    left: 47%;
+    margin: 8px;
+}
+.owl-next {
+    position: absolute;
+    left: 50%;
+    margin: 8px;
+}
+.fa:hover {
+    background: none;
+    color: #212226;
+}
+
+/* ================================
+    skill section
+===================================*/
+
+.skill {
+    margin-bottom: 20px;
+}
+.skill h4 {
+    line-height: 62px;
+    margin: 0;
+    font-weight: normal;
+}
+.progress {
+    height: 25px;
+    border-radius: 0;
+    background: #efefef;
+    overflow: visible;
+}
+.progress-bar {
+    background-color: #f4c613;
+    position: relative;
+}
+.progress-bar span {
+    font-size: 11px;
+    font-weight: 100;
+    font-family: "Open Sans", sans-serif;
+    background-color: #212226;
+    padding: 3px;
+    position: absolute;
+    left: 97%;
+    top: -47px;
+}
+.progress-bar span:before {
+    content: "";
+    border-top: 8px solid #212226;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    position: absolute;
+    bottom: -8px;
+    left: 23%;
+}
+
+/* ================================
+                contact
+===================================*/
+
+.vertical-heading p {
+    margin: 25px 0 20px 0;
+}
+ul.office-details {
+    list-style: none;
+    padding: 0;
+    font-size: 5px;
+    font-weight: bold;
+}
+ul.office-details li {
+    font-weight: bold;
+    font-family: "Raleway", sans-serif;
+    margin-top: 12px;
+}
+ul.office-details li i {
+    font-size: 15px;
+}
+#contact {
+    border-top: 5px solid #212226;
+}
+.social-list a {
+    color: #212226;
+    border: 1px solid #212226;
+    text-align: center;
+}
+ul.social-list:hover {
+    color: #fff;
+}
+footer {
+    background: #212226;
+    padding: 20px;
+}
+footer p {
+    color: #fff;
+    line-height: 20px;
+}
+footer p span {
+    color: #f4c613;
+}
+.navbar-brand img {
+    position: absolute;
+    width: 220px;
+    padding: 0x 00px 50px 100px;
+}
+
+/* ================================
+                Navigation
+===================================*/
+
+.navbar {
+    display: inline-block;
+    padding: 35px 0 20px 0;
+    -webkit-transition: all 300ms linear;
+    transition: all 500ms linear;
+}
+.site-nav-wrapper {
+    padding: 0 85px;
+}
+.navbar-brand {
+    padding: 13px 15px;
+}
+ul.navbar-nav > li > a {
+    font-family: "Raleway", sans-serif;
+    color: #fff;
+    font-size: 13px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+ul.navbar-nav > li > a:hover,
+ul.navbar-nav > li > a:focus {
+    background: none;
+    color: #f4c613;
+}
+
+/* White Navigation*/
+
+.white-nav-top {
+    background: #fff;
+    padding: 10px 0;
+    -webkit-box-shadow: 0 8px 6px -9px #999;
+    box-shadow: 0 8px 6px -9px #999;
+    z-index: 2;
+}
+.white-nav-top ul.navbar-nav > li > a {
+    color: #212226;
+}
+.white-nav-top ul.navbar-nav > li > a:hover,
+.white-nav-top ul.navbar-nav > li > a:focus {
+    color: #f4c613;
+}
+
+/* Scroll spy active */
+
+.white-nav-top ul.navbar-nav > li.active > a {
+    color: #f4c613;
+    font-weight: 500;
+}
+.fa-angle-up {
+    color: maroon;
+    padding: 1px 1PX;
+    border-radius: 4px;
+    font-size: 22px;
+}
+
+/* ================================
+          Animation
+===================================*/
+
+#home-heading-2 {
+    -webkit-animation-duration: 1.5s;
+    animation-duration: 1.5s;
+    -webkit-animation-delay: 1s;
+    animation-delay: 1s;
+}
+.fa-angle-down {
+    color: #fff;
+}
+#arrow-down {
+    -webkit-animation-duration: 1.5s;
+    animation-duration: 1.5s;
+    -webkit-animation-delay: 3s;
+    animation-delay: 3s;
+}
+#home-btn {
+    -webkit-animation-duration: 1.5s;
+    animation-duration: 1.5s;
+    -webkit-animation-delay: 2.5s;
+    animation-delay: 2.5s;
+}
+
+
+
+
+/* About Right */
+
+#about-right span {
+    font-family: "lobster", sans-serif;
+    font-size: 16px;
+    background: #f4c613;
+}
+
+.vertical-heading span {
+     font-family: "lobster", sans-serif;
+    font-size: 25px;
+    background: #f4c613;
+}
+
+.about-item span {
+    font-family: "lobster", sans-serif;
+    font-size: 16px;
+    background: #f4c613;
+}
+
+#quote p {
+    font-family: "lobster", sans-serif;
+    font-size: 17px;
+}
+
+#quote span {
+    background: #f4c613;
+}
+
+.skill h4 {
+    font-weight: 600;
+}
+
+
+
+
+
+
+
+
+
+
+
